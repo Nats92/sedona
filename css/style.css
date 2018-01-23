@@ -1,0 +1,64 @@
+body {
+	font-family: "PT Sans", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+
+	background-color: #f2f2f2;
+	margin: 0;
+	padding: 0;
+}
+
+.centering-wrap {
+	position: relative;
+	color: #000;
+
+	width: 1200px;
+	margin: 0 auto;
+	background-color: #fff;
+	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+.main-header {
+	position: relative;
+	width: 100%;
+	min-height: 565px;
+	background-image: url("../img/background-photo.jpg");
+}
+	.main-header::after {
+		position: absolute;
+		bottom: 0;
+		content: "";
+		width: 100%;
+		height: 57px;
+		background-image: url("../img/decor-line.png");
+	}
+	.header-logo {
+		width: 138px;
+		height: auto;
+		position: absolute;
+		left: 50%;
+		margin-left: -69px;
+	}
+	.site-nav {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+
+		min-height: 56px;
+		margin: 0;
+		padding: 0;
+		background-color: #fff;
+		list-style: none;
+	}
+		.site-nav .nav-item {
+			font-family: "PT Sans", sans-serif;
+			font-size: 14px;
+			line-height: 26px;
+			font-weight: 700;
+			color: #000;
+			text-transform: uppercase;
+			text-decoration: none;
+
+			margin: 0 73px;
+		}
