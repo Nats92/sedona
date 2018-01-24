@@ -70,6 +70,18 @@ body {
 					color: #000;
 					text-decoration: none;
 				}
+				.site-nav .nav-item:hover,
+				.site-nav .nav-item:focus {
+					color: #81b3d2;
+				}
+				.site-nav .nav-item:active {
+					color: rgba(0, 0, 0, 0.3);
+				}
+				.site-nav .nav-item.current-nav-item {
+					color: #766357;
+				}
+
+
 	.info {
 		font-family: "PT Sans", sans-serif;
 		font-size: 21px;
@@ -98,6 +110,7 @@ body {
 
 			margin: 0;
 			padding: 0;
+		    margin-bottom: 50px;
 		}
 			.features-item {
 				display: flex;
@@ -107,16 +120,17 @@ body {
 				.features-item .text-block {
 					width: 400px;
 					min-height: 256px;
-					padding: 45px 55px;
+					padding: 47px 27px;
 					text-align: center;
 					box-sizing: border-box;
+    				background-color: #eeeeee;
 				}
 				.features-item .feature-title {
 					font-size: 21px;
 					line-height: 21px;
 					font-weight: 700;
 
-					width: 200px;
+					width: 151px;
 					margin: 0 auto;
 				    margin-bottom: 25px;
 				}
@@ -132,6 +146,7 @@ body {
 
 					margin: 0;
     				margin-top: 20px;
+    				padding: 0 30px;
 				}
 			.item-with-img {
 				flex-wrap: wrap;
@@ -140,6 +155,10 @@ body {
 				.item-with-img .text-block {
 					color: #fff;
 					background-color: #81b3d2;
+				}
+				.item-with-img .feature-description {
+					padding: 0;
+    				padding: 0 20px;
 				}
 				.item-with-img .img-block {
 					width: 800px;
@@ -175,7 +194,7 @@ body {
 					line-height: 21px;
 					font-weight: 400;
 				}
-					.apartments::before {
+					.details-list-item.apartments::before {
 						position: absolute;
 						top: 60px;
 						left: 50%;
@@ -185,5 +204,29 @@ body {
 						height: 72px;
 						margin-left: -37px;
 						background-image: url("../img/apartments-icon.svg");
+						background-repeat: no-repeat;
+					}
+					.details-list-item.food::before {
+						position: absolute;
+						top: 62px;
+						left: 50%;
+						content: "";
+						
+						width: 74px;
+						height: 70px;
+						margin-left: -37px;
+						background-image: url("../img/food-icon.svg");
+						background-repeat: no-repeat;
+					}
+					.details-list-item.souvenirs::before {
+						position: absolute;
+						top: 56px;
+						left: 50%;
+						content: "";
+						
+						width: 64px;
+						height: 76px;
+						margin-left: -32px;
+						background-image: url("../img/souvenirs-icon.svg");
 						background-repeat: no-repeat;
 					}
