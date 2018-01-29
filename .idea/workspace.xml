@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12672d21-5a73-49d7-bdf5-0a9bed6a895d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/img/academy-logo.svg" afterPath="$PROJECT_DIR$/img/academy-logo.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -20,8 +22,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="586">
-              <caret line="115" column="62" lean-forward="false" selection-start-line="115" selection-start-column="62" selection-end-line="115" selection-end-column="62" />
+            <state relative-caret-position="311">
+              <caret line="132" column="20" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -30,8 +32,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
-              <caret line="404" column="50" lean-forward="false" selection-start-line="404" selection-start-column="50" selection-end-line="404" selection-end-column="50" />
+            <state relative-caret-position="532">
+              <caret line="507" column="33" lean-forward="false" selection-start-line="507" selection-start-column="33" selection-end-line="507" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -42,6 +44,10 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>search-form</find>
+      <find>fff</find>
+      <find>fill=&quot;#fff&quot;</find>
+      <find>detail</find>
+      <find>soc</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -52,6 +58,7 @@
       <list>
         <option value="$PROJECT_DIR$/img/academy-logo.svg" />
         <option value="$PROJECT_DIR$/img/calendar.svg" />
+        <option value="$PROJECT_DIR$/img/academy-logo-hover.svg" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/css/style.css" />
       </list>
@@ -135,12 +142,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1517044596996</updated>
-      <workItem from="1517044599001" duration="17533000" />
+      <workItem from="1517044599001" duration="23598000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17533000" />
+    <option name="totallyTimeSpent" value="23598000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="509" y="1" width="1401" height="1028" extended-state="0" />
@@ -183,14 +190,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/img/academy-logo.svg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="648" lean-forward="false" selection-start-line="0" selection-start-column="648" selection-end-line="0" selection-end-column="651" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/calendar.svg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="81">
@@ -199,18 +198,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/img/academy-logo.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="648" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/academy-logo-hover.svg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="115" column="62" lean-forward="false" selection-start-line="115" selection-start-column="62" selection-end-line="115" selection-end-column="62" />
+        <state relative-caret-position="311">
+          <caret line="132" column="20" lean-forward="false" selection-start-line="132" selection-start-column="20" selection-end-line="132" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="404" column="50" lean-forward="false" selection-start-line="404" selection-start-column="50" selection-end-line="404" selection-end-column="50" />
+        <state relative-caret-position="532">
+          <caret line="507" column="33" lean-forward="false" selection-start-line="507" selection-start-column="33" selection-end-line="507" selection-end-column="33" />
           <folding />
         </state>
       </provider>
