@@ -348,10 +348,12 @@ body {
                             background-color: transparent;
                             border-color: #e5e5e5;
                         }
-                        .form-field:hover + .calendar-icon {
+                        .form-field:hover + .calendar-icon,
+                        .calendar-icon:hover {
                             fill: #000;
                         }
-                        .form-field:active + .calendar-icon {
+                        .form-field:active + .calendar-icon,
+                        .calendar-icon:active {
                             fill: #81b3d2;
                         }
                     .adults-field-wrap,
@@ -360,7 +362,7 @@ body {
                         align-items: center;
 
                         width: 230px;
-                        margin-bottom: 56px;
+                        margin-bottom: 54px;
                     }
                     .children-field-wrap {
                         justify-content: flex-end;
@@ -386,41 +388,49 @@ body {
                                 border: 0;
                                 background-color: #f2f2f2;
                             }
-                            .decrease-button:before {
-                                position: absolute;
-                                content: "";
-                                top: 50%;
-                                margin-top: -1px;
-
-                                width: 12px;
-                                height: 3px;
-                                background-color: #a9a9a9;
+                            .field-and-controls-wrap button {
+                                cursor: pointer;
+                                outline: none;
                             }
-                            .increase-button:before {
-                                position: absolute;
-                                content: "";
-                                top: 50%;
-                                margin-top: -1px;
-                                left: 50%;
-                                margin-left: -1px;
+	                            .decrease-button:before,
+	                            .increase-button:before {
+	                                position: absolute;
+	                                content: "";
+	                                top: 50%;
+	                                margin-top: -1px;
+								    left: 50%;
+								    margin-left: -6px;
 
-                                width: 12px;
-                                height: 3px;
-                                background-color: #a9a9a9;
-                            }
-                            .increase-button:after {
-                                position: absolute;
-                                content: "";
-                                top: 50%;
-                                margin-top: -1px;
-                                left: 50%;
-                                /*margin-left: -6px;*/
+	                                width: 12px;
+	                                height: 3px;
+	                                background-color: #a9a9a9;
+	                            }
+	                            .increase-button:after {
+	                                position: absolute;
+	                                content: "";
+	                                top: 50%;
+	                                margin-top: -1px;
+	                                left: 50%;
+	                                margin-left: -6px;
 
-                                width: 12px;
-                                height: 3px;
-                                background-color: #a9a9a9;
-                                transform: rotate(90deg);
-                            }
+	                                width: 12px;
+	                                height: 3px;
+	                                background-color: #a9a9a9;
+	                                transform: rotate(90deg);
+	                            }
+	                            	.decrease-button:hover:before,
+	                            	.decrease-button:focus:before,
+	                            	.increase-button:hover:before,
+	                            	.increase-button:focus:before,
+	                            	.increase-button:hover:after,
+	                            	.increase-button:focus:after {
+	                                	background-color: #000;
+	                            	}
+	                            	.decrease-button:active:before,
+	                            	.increase-button:active:before,
+	                            	.increase-button:active:after {
+	                                	background-color: #81b3d2;
+	                            	}
                     .search-form .submit-form {
                         font-family: "PT Sans", sans-serif;
                         font-size: 21px;
@@ -434,7 +444,16 @@ body {
                         padding: 16px;
                         background-color: #81b3d2;
                         border: 0;
+                        cursor: pointer;
                     }
+                    	.search-form .submit-form:hover,
+                    	.search-form .submit-form:focus {
+                    		background-color: #669ec0;
+                    	}
+                    	.search-form .submit-form:active {
+                    		background-color: #5496bd;
+                    		color: rgba(255, 255, 255, 0.3);
+                    	}
 
                     .form-field::-webkit-input-placeholder {
                         font-size: 14px;
@@ -469,7 +488,7 @@ body {
 
         display: flex;
         align-items: center;
-        padding: 39px 0;
+        padding: 36px 0 42px 0;
         background-color: rgba(255, 255, 255, 0.9);
     }
         .footer-column {
@@ -504,8 +523,18 @@ body {
                         background-repeat: no-repeat;
                         background-position: center center;
                     }
+                    	.footer-column.social-sites .social-icon:hover,
+                    	.footer-column.social-sites .social-icon:focus {
+                    		background-color: #669ec0;
+                    	}
+                    	.footer-column.social-sites .social-icon:active {
+                    		background-color: #5496bd;
+                    	}
                         .footer-column.social-sites .twit {
                             background-image: url("../img/twit-icon.svg");
+                        }
+                        .footer-column.social-sites:active .twit {
+                        	opacity: 0.3;
                         }
                         .footer-column.social-sites .fb {
                             background-image: url("../img/fb-icon.svg");
