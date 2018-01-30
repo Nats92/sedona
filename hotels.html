@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <title>Sedona-hotels</title>
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body class="hotels-page">
+        <div class="centering-wrap">
+            <header class="hotels-header">
+                <nav class="main-nav">
+                    <img class="header-logo" src="img/little-logo.png" alt="Логотип Sedona" width="138" height="70">
+                    <div class="site-nav">
+                        <a class="nav-item" href="#">Информация</a>
+                        <a class="nav-item" href="#">Фото и видео</a>
+                        <a class="nav-item" href="#">Карта штата</a>
+                        <a class="nav-item current-nav-item" href="hotels.html">Гостиницы</a>
+                    </div>
+                </nav>
+
+                <form action="" class="filter-form" method="get">
+                    <fieldset class="filter-column infrastructure">
+                        <legend class="fieldset-title">Инфраструктура:</legend>
+                        <input class="filter-field visually-hidden" type="checkbox" name="swimming-pool" id="swimming-pool" checked>
+                        <label class="filter-field-label" for="swimming-pool">Бассейн</label>
+
+                        <input class="filter-field visually-hidden" disabled type="checkbox" name="parking" id="parking">
+                        <label class="filter-field-label" for="parking">Парковка</label>
+
+                        <input class="filter-field visually-hidden" type="checkbox" name="wi-fi" id="wi-fi">
+                        <label class="filter-field-label" for="wi-fi">WI-FI</label>
+                    </fieldset>
+
+                    <fieldset class="filter-column housing-type">
+                        <legend class="fieldset-title">тип-жилья:</legend>
+                        <input class="filter-field visually-hidden" disabled type="checkbox" name="hotel" id="hotel" checked>
+                        <label class="filter-field-label" for="hotel">Гостиница</label>
+
+                        <input class="filter-field visually-hidden" type="checkbox" name="motel" id="motel" checked>
+                        <label class="filter-field-label" for="motel">Мотель</label>
+
+                        <input class="filter-field visually-hidden" type="checkbox" name="apartment" id="apartment" checked>
+                        <label class="filter-field-label" for="apartment">Апартаменты</label>
+                    </fieldset>
+
+                    <div class="filter-column day-costs">
+                        <p class="fieldset-title">Стоимость в сутки (Р):</p>
+                        <div class="range-box">
+                            <label class="min-cost">от <input type="text" value="0"></label>
+                            <label class="max-cost">до <input type="text" value="3000"></label>
+                        </div>
+                        <div class="range-wrap">
+                            <div class="range-line">
+                                <button class="left-range-pin"></button>
+                                <span class="line-value-indicator"></span>
+                                <button class="right-range-pin"></button>
+                            </div>
+                        </div>
+                        <button class="filter-form-submit" type="submit">Показать</button>
+                    </div>
+                </form>
+            </header>
+
+            <main>
+                <div class="sort-wrap">
+                    <p class="amount">Найдено: 3</p>
+                    <p class="sort-title">Сортировка:</p>
+
+                    <a class="sorting-link" href="#">По цене</a>
+                    <a class="sorting-link" href="#">По типу</a>
+                    <a class="sorting-link" href="#">По рейтингу</a>
+
+                    <div class="sorting-arrows">
+                        <a class="arrow-on-increase" href=""></a>
+                        <a class="arrow-on-decrease" href=""></a>
+                    </div>
+                </div>
+
+            </main>
+
+        </div>
+
+    </body>
+
+</html>

@@ -8,6 +8,10 @@ body {
 	margin: 0;
 	padding: 0;
 }
+a {
+    display: block;
+    text-decoration: none;
+}
 .hidden {
     display: none;
 }
@@ -583,3 +587,134 @@ body {
                     .footer-column.site-developer .academy-logo:active {
                         fill: #bdbbbc;
                     }
+.hotels-page {
+    text-transform: uppercase;
+}
+.hotels-page .hotels-header {
+    min-height: 217px;
+    background-image: url("../img/filter-background.png");
+}
+    .filter-form {
+        display: flex;
+        align-items: flex-start;
+
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #fff;
+
+        padding: 27px 71px;
+    }
+        .filter-column {
+            display: flex;
+            flex-direction: column;
+            border: 0;
+            padding: 0;
+            margin: 0;
+            margin-right: 115px;
+        }
+            .filter-column:last-child {
+                margin-right: 0;
+            }
+            .filter-column .fieldset-title {
+                font-size: 16px;
+                line-height: 21px;
+                font-weight: 700;
+
+                margin: 0;
+                margin-bottom: 24px;
+            }
+            .filter-field-label {
+                position: relative;
+                padding-left: 40px;
+                margin-bottom: 21px;
+                cursor: pointer;
+            }
+            .filter-field + .filter-field-label::before {
+                position: absolute;
+                left: 0;
+                width: 27px;
+                height: 23px;
+                content: "";
+
+                background-image: url("../img/checkbox-off.svg");
+                background-repeat: no-repeat;
+                background-position: 0 center;
+            }
+                .filter-field:hover + .filter-field-label {
+                    transform: scale(1.05);
+                }
+                .filter-field:disabled + .filter-field-label {
+                    color: #6a6a6a;
+                    transform: none;
+                    cursor: default;
+                }
+                    .filter-field:disabled + .filter-field-label::before {
+                        background-image: url("../img/checkbox-off-disabled.svg");
+                    }
+                .filter-field:checked + .filter-field-label::before {
+                    background-image: url("../img/checkbox-on.svg");
+                }
+                    .filter-field:checked:hover + .filter-field-label {
+                        transform: scale(1.05);
+                    }
+                    .filter-field:checked:disabled + .filter-field-label::before {
+                        background-image: url("../img/checkbox-on-disabled.svg");
+                    }
+                    .filter-field:checked:disabled:hover + .filter-field-label {
+                        transform: none;
+                        color: #6a6a6a;
+                    }
+        .filter-column.day-costs {
+            margin-left: auto;
+        }
+            .filter-column.day-costs input {
+                font-family: "PT Sans", sans-serif;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                color: #fff;
+
+                border: 0;
+                background-color: transparent;
+            }
+    .sort-wrap {
+        display: flex;
+        align-items: center;
+
+        padding: 0 73px;
+    }
+        .sort-wrap .amount {
+            font-size: 21px;
+            line-height: 26px;
+            font-weight: 700;
+
+            margin: 0;
+            margin-right: 46px;
+        }
+        .sort-title,
+        .sorting-link {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #000;
+        }
+            .sort-title {
+                margin-right: 40px;
+            }
+            .sorting-link {
+                margin-right: 33px;
+            }
+                .sorting-link:last-child {
+                    margin-right: 0;
+                }
+        .sorting-arrows {
+            margin-left: auto;
+        }
+            .arrow-on-increase,
+            .arrow-on-decrease {
+                display: inline-block;
+                width: 11px;
+                height: 10px;
+                background-color: #5496bd;
+            }
