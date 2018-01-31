@@ -674,7 +674,11 @@ a {
         .filter-column.day-costs {
             margin-left: auto;
         }
+        	.day-costs .fieldset-title {
+        		margin-bottom: 10px;
+        	}
             .filter-column.day-costs input {
+            	width: 60px;
                 font-family: "PT Sans", sans-serif;
                 font-size: 14px;
                 line-height: 21px;
@@ -682,7 +686,19 @@ a {
                 color: #fff;
 
                 border: 0;
+                margin-left: 5px;
                 background-color: transparent;
+            }
+            .day-costs .range-box {
+            	display: inline-block;
+            	text-align: center;
+            	border: 2px solid #fff;
+            	border-radius: 2px;
+            }
+            .day-costs .min-cost,
+            .day-costs .max-cost {
+				display: inline-block;
+            	width: 157px;
             }
     .sort-wrap {
         display: flex;
@@ -699,21 +715,38 @@ a {
             margin: 0;
             margin-right: 48px;
         }
-        .sort-title,
-        .sorting-link {
+        .sort-title {
             font-size: 12px;
             line-height: 18px;
             font-weight: 400;
             color: #000;
+
+            margin-right: 40px;
         }
-            .sort-title {
-                margin-right: 40px;
+        .sorting-link {
+            font-size: 12px;
+            line-height: 18px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.3);
+
+            border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+            margin-right: 33px;
+        }
+            .sorting-link:hover,
+            .sorting-link:focus {
+            	color: #81b3d2;
+            	border-bottom-color: #81b3d2;
             }
-            .sorting-link {
-                margin-right: 33px;
-            }
+        	.sorting-link:active {
+        		color: #000;
+        		border: 0;
+        	}
                 .sorting-link:last-child {
                     margin-right: 0;
+                }
+                .sorting-link.active {
+                	color: #81b3d2;
+                	border: 0;
                 }
         .sorting-arrows {
             margin-left: auto;
@@ -735,6 +768,9 @@ a {
             		.arrow-on-increase:focus {
             			border-bottom-color: #000; 
             		}
+            		.arrow-on-increase:active {
+            			border-bottom-color: #81b3d2;
+            		}
         		.arrow-on-decrease {
         			border-bottom: 0;
                 	border-top: 11px solid #cacaca;
@@ -743,3 +779,6 @@ a {
 	            	.arrow-on-decrease:focus {
 	            		border-top-color: #000;
 	            	}
+	            	.arrow-on-decrease:active {
+            			border-top-color: #81b3d2;
+            		}
