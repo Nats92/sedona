@@ -32,7 +32,7 @@ a {
 	width: 1200px;
 	margin: 0 auto;
 	background-color: #fff;
-	box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.2);
+	box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 	.main-header {
 		position: relative;
@@ -386,6 +386,7 @@ a {
                         .field-and-controls-wrap {
                             width: 114px;
                             display: flex;
+                            margin: 0;
                         }
                             .field-and-controls-wrap button,
                             .field-and-controls-wrap input {
@@ -604,7 +605,7 @@ a {
         color: #fff;
 
     	min-height: 217px;
-        padding: 27px 71px 10px 71px;
+        padding: 27px 73px 10px 71px;
         box-sizing: border-box;
     }
         .filter-column {
@@ -672,6 +673,7 @@ a {
                         color: #6a6a6a;
                     }
         .filter-column.day-costs {
+            width: 317px;
             margin-left: auto;
         }
         	.day-costs .fieldset-title {
@@ -690,16 +692,91 @@ a {
                 background-color: transparent;
             }
             .day-costs .range-box {
-            	display: inline-block;
-            	text-align: center;
+                position: relative;
+                width: 100%;
             	border: 2px solid #fff;
             	border-radius: 2px;
+                margin-bottom: 20px;
+                box-sizing: border-box;
             }
+                .day-costs .range-box::before {
+                    position: absolute;
+                    left: 157px;
+                    top: 5px;
+                    content: "";
+                    width: 2px;
+                    height: 22px;
+                    background-color: #fff;
+                }
             .day-costs .min-cost,
             .day-costs .max-cost {
-				display: inline-block;
-            	width: 157px;
+                display: inline-block;
+                vertical-align: middle;
+                padding: 4px 0;
+                padding-left: 63px;
             }
+            .day-costs .range-wrap {
+                margin-bottom: 32px;
+            }
+                .range-wrap .range-line {
+                    position: relative;
+                    width: 100%;
+                    height: 2px;
+                    background-color: rgba(255, 255, 255, 0.3);
+                }
+                    .line-value-indicator {
+                        width: 262px;
+                        height: 2px;
+                        background-color: #fff;
+                    }
+                    .range-line .left-range-pin,
+                    .range-line .right-range-pin {
+                        position: absolute;
+                        top: -10px;
+
+                        display: inline-block;
+                        width: 20px;
+                        height: 20px;
+                        padding: 0;
+                        background-color: #b1b1b1;
+                        border: 8px solid #fff;
+                        border-radius: 50%;
+
+                        box-sizing: border-box;
+                        box-shadow: 0 2px 0 #b1b1b1;
+                        cursor: pointer;
+                    }
+                    .range-line .right-range-pin {
+                        left: 252px;
+                    }
+                    .range-line .left-range-pin:hover,
+                    .range-line .right-range-pin:hover {
+                        width: 22px;
+                        height: 22px;
+                    }
+            .filter-form-submit {
+                display: block;
+                width: 136px;
+                padding: 5px 0;
+                margin: 0 auto;
+                background-color: transparent;
+                border: 2px solid #fff;
+                border-radius: 2px;
+
+                font-family: "PT Sans", sans-serif;
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                color: #fff;
+                cursor: pointer;
+                text-transform: uppercase;
+            }
+                .filter-form-submit:hover,
+                .filter-form-submit:focus {
+                    background-color: #fff;
+                    color: #000;
+                }
+
     .sort-wrap {
         display: flex;
         align-items: center;
@@ -766,11 +843,14 @@ a {
             	}
             		.arrow-on-increase:hover,
             		.arrow-on-increase:focus {
-            			border-bottom-color: #000; 
+            			border-bottom-color: #000;
             		}
             		.arrow-on-increase:active {
             			border-bottom-color: #81b3d2;
             		}
+                    .arrow-on-increase.current {
+                        border-bottom-color: #81b3d2;
+                    }
         		.arrow-on-decrease {
         			border-bottom: 0;
                 	border-top: 11px solid #cacaca;
@@ -782,3 +862,129 @@ a {
 	            	.arrow-on-decrease:active {
             			border-top-color: #81b3d2;
             		}
+                    .arrow-on-decrease.current {
+                        border-top-color: #81b3d2;
+                    }
+    .search-results {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+        .searched-hotel {
+            font-size: 0;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 73px;
+            border-bottom: 1px solid #e5e5e5;
+
+            box-sizing: border-box;
+        }
+            .hotel-info .summary {
+                display: inline-block;
+                vertical-align: middle;
+                min-height: 90px;
+            }
+            .hotel-info .hotel-img {
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: 30px;
+            }
+            .hotel-info .hotel-name {
+                display: block;
+                margin: 0;
+                margin-bottom: 9px;
+
+                font-size: 21px;
+                line-height: 19px;
+                font-weight: 700;
+                color: #000;
+            }
+                .hotel-info .hotel-name:hover,
+                .hotel-info .hotel-name:focus {
+                    color: #81b3d2;
+                }
+                .hotel-info .hotel-name:active {
+                    color: rgba(0, 0, 0, 0.3);
+                }
+            .hotel-info .housing-type,
+            .hotel-info .daily-costs {
+                display: inline-block;
+                vertical-align: middle;
+                width: 110px;
+                margin: 0;
+                margin-right: 6px;
+                margin-bottom: 13px;
+
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                color: #333333;
+            }
+            .hotel-info .buttons-wrap {
+                margin: 0;
+            }
+                .hotel-info .button {
+                    display: inline-block;
+                    vertical-align: middle;
+                    font-size: 14px;
+                    line-height: 21px;
+                    font-weight: 700;
+                    color: #fff;
+
+                    padding: 3px 16px;
+                    margin-right: 6px;
+                }
+                    .hotel-info .button.hotel-details {
+                        background-color: #81b3d2;
+                    }
+                        .hotel-info .button.hotel-details:hover,
+                        .hotel-info .button.hotel-details:focus {
+                            background-color: #669ec0;
+                        }
+                        .hotel-info .button.hotel-details:active {
+                            background-color: #5496bd;
+                            color: rgba(255, 255, 255, 0.3);
+                        }
+                    .hotel-info .button.to-reserve {
+                        background-color: #766357;
+                    }
+                        .hotel-info .button.to-reserve:hover,
+                        .hotel-info .button.to-reserve:focus {
+                            background-color: #604e43;
+                        }
+                        .hotel-info .button.to-reserve:active {
+                            background-color: #503e33;
+                            color: rgba(255, 255, 255, 0.3);
+                        }
+                    .rating-and-stars {
+                        min-height: 90px;
+                    }
+            .searched-hotel .stars {
+                display: flex;
+                justify-content: flex-end;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 46px;
+                list-style: none;
+            }
+                .stars li {
+                    margin-right: 5px;
+                }
+                    .stars li:last-child {
+                        margin-right: 0;
+                    }
+            .searched-hotel .rating {
+                font-size: 14px;
+                line-height: 21px;
+                font-weight: 400;
+                color: #666666;
+
+                margin: 0;
+                padding: 2px 12px;
+                background-color: #f2f2f2;
+            }
+    .hotels-page .main-footer {
+        position: relative;
+    }
