@@ -518,6 +518,8 @@ a {
                     }
     .map {
         position: relative;
+        width: 100%; 
+        height: 593px;
     }
     #map {
         position: absolute; 
@@ -610,16 +612,21 @@ a {
             }
                 .footer-column.site-developer .academy-logo {
                     display: block;
+                    width: 115px;
+                    height: 41px;
                     margin-left: 10px;
-                    margin-bottom: 6px;
+                    margin-bottom: 2px;
+                    background-image: url("../img/academy-logo.svg");
+                    background-repeat: no-repeat;
+                    background-size: contain;
                     cursor: pointer;
                 }
                     .footer-column.site-developer .academy-logo:hover,
                     .footer-column.site-developer .academy-logo:focus {
-                        fill: #81b3d2;
+                        background-image: url("../img/academy-logo-hover.svg");
                     }
                     .footer-column.site-developer .academy-logo:active {
-                        fill: #bdbbbc;
+                        background-image: url("../img/academy-logo-active.svg");
                     }
 .hotels-page {
     text-transform: uppercase;
